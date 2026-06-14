@@ -9,5 +9,5 @@ def predict_price(rooms: int) -> float:
     rooms_sc = sc_x.transform(np.array([[rooms]]))
     prediction_sc = model.predict(rooms_sc)
     prediction = sc_y.inverse_transform(prediction_sc) * 1000
-    price = round(float(prediction_sc[0][0]), 2)
+    price = round(float(prediction[0][0]), 2)
     return price
