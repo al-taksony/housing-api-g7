@@ -23,3 +23,5 @@ def index():
         "title": "FASTAPI HOUSING API VERSION 1.0.0",
         "message": "Bienvenido a la API"
     }
+    
+#Base.metadata.create_all(engine)
